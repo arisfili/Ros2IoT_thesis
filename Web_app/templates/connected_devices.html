@@ -1,0 +1,11 @@
+{% extends "login_home.html" %}
+{% block content %}
+    <div class="w3-container">
+      <h2>Connected Devices</h2>
+      <ul class="w3-ul w3-blue-grey">
+          {%for d in devices%}
+            <li>{{d}}</li>
+          {% endfor %}
+      </ul>
+    </div>
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends "login_home.html" %}
+{% block content %}
+    <div class="w3-container">
+      <h2>Ros Topics</h2>
+      <table class="w3-table w3-tiny w3-blue-grey">
+        <tr>
+          <th>Topic Name</th>
+          <th>Topic Type</th>
+        </tr>
+        {% for t in topics %}
+            <tr>
+              <td>{{t[0]}}</td>
+              <td>{{t[1]}}</td>
+            </tr>
+        {% endfor %}
+      </table>
+      <h2>Ros Services</h2>
+      <table class="w3-table w3-tiny w3-blue-grey">
+        <tr>
+          <th>Service Name</th>
+          <th>Service Type</th>
+        </tr>
+        {% for s in services %}
+            <tr>
+              <td>{{s[0]}}</td>
+              <td>{{s[1]}}</td>
+            </tr>
+        {% endfor %}
+      </table>
+       <h2>Ros Nodes</h2>
+          <ul class="w3-ul w3-blue-grey">
+              {%for n in nodes%}
+                <li>{{n}}</li>
+              {% endfor %}
+          </ul>
+    </div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+#!/home/aris/ros-2-iot-thesis_management/venv2713/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'catkin-pkg==0.4.12','console_scripts','catkin_generate_changelog'
+__requires__ = 'catkin-pkg==0.4.12'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('catkin-pkg==0.4.12', 'console_scripts', 'catkin_generate_changelog')()
+    )

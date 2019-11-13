@@ -1,0 +1,10 @@
+#!/home/aris/ros-2-iot-thesis_management/venv2713/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'rospkg==1.1.9','console_scripts','rosversion'
+__requires__ = 'rospkg==1.1.9'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('rospkg==1.1.9', 'console_scripts', 'rosversion')()
+    )
